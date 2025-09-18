@@ -1,0 +1,29 @@
+#pide 2 numeros y sume reste multiplique y divida despues que salga el resultado
+ 
+Primernumero= int(input("Introduce el primer numero:"))
+Segundonumero= int(input("Introduce el segundo numero:"))
+suma = Primernumero + Segundonumero
+resta = Primernumero - Segundonumero
+multiplicacion = Primernumero * Segundonumero
+division =float(Primernumero / Segundonumero)
+print("La suma de los dos numeros es:",suma)
+print("La resta de los dos numeros es:",resta)
+print("La multiplicacion de los dos numeros es:",multiplicacion)
+print("La division de los dos numeros es:",division)
+print("🤥")
+a=5 
+b='Hola'
+
+c=a
+d=b
+a,b=b,a
+print(c)
+
+nombre = "david"
+edad = 19 
+idalumno = nombre + str(edad)
+print(idalumno)
+l1=[1,2,3]
+l2=[4,5,6]
+
+print (len(l1+l2))
