@@ -1,0 +1,2 @@
+listaPapa= ['Di','buen','dia','a','papa']
+print(listaPapa.reverse)

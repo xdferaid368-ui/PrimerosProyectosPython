@@ -1,0 +1,6 @@
+#Dado una lista, hacer un programa que indique si está ordenada o no.
+lista = [1, 2, 3, 4, 5]
+if lista == sorted(lista):
+    print("La lista está ordenada.")
+else:
+    print("La lista NO está ordenada.")
