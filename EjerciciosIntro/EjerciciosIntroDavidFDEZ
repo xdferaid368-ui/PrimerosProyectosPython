@@ -1,0 +1,68 @@
+#EJ1 LISTAS
+lista = []
+
+num = int(input("Introduce un numero: "))
+while num >= 0:
+    lista.append(num)
+    num = int(input("Introduce un numero: "))
+
+if len(lista) > 0:
+    maximo = lista[0]
+    for n in lista:
+        if n > maximo:
+            maximo = n
+    print("El máximo es:", maximo)
+else:
+    print("No se han introducido números positivos")
+
+print("Los números pares son:")
+for n in lista:
+    if n % 2 == 0:
+        print(n)
+
+#EJ2 LISTAS
+listaPapa = ['Di', 'buen', 'dia', 'a', 'papa']
+
+listaInvertida = []
+i = len(listaPapa) - 1
+while i >= 0:
+    listaInvertida.append(listaPapa[i])
+    i = i - 1
+
+print("Lista invertida:", listaInvertida)
+
+#EJ3 LISTAS
+
+lista = ["perro", "gato", "perro", "pajaro", "perro"]
+
+cadena = input("Introduce una cadena: ")
+contador = 0
+for elem in lista:
+    if elem == cadena:
+        contador = contador + 1
+
+if contador > 0:
+    print("La cadena está en la lista")
+    print("Aparece", contador, "veces")
+else:
+    print("La cadena NO está en la lista")
+
+nueva = input("Introduce la nueva cadena para sustituir: ")
+for i in range(len(lista)):
+    if lista[i] == cadena:
+        lista[i] = nueva
+
+print("Lista después de sustituir:", lista)
+
+borrar = input("Introduce una cadena para borrar: ")
+while borrar in lista:
+    lista.remove(borrar)
+
+print("Lista después de borrar:", lista)
+
+#EJ4 LISTAS
+lista = [1, 2, 3, 4, 5]
+if lista == sorted(lista):
+    print("La lista está ordenada.")
+else:
+    print("La lista NO está ordenada.")

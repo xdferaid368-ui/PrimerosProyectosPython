@@ -1,22 +1,12 @@
-#Dada una lista de cadenas, pide una cadenena por teclado e indica si está en la lista, 
-# indica cuantas veces aparece en la lista, lee otra cadena y sustituye la primera por la segunda en la lista,
-#  y por último borra la cadena de la lista
-# Lista inicial de cadenas
+
 lista = ["perro", "gato", "perro", "pajaro", "perro"]
-
 print("Lista inicial:", lista)
-
-# 1. Pedir una cadena
 cadena = input("Introduce una cadena: ")
-
-# Comprobar si está en la lista
 if cadena in lista:
     print("La cadena está en la lista.")
     print("Aparece", lista.count(cadena), "veces.")
 else:
     print("La cadena NO está en la lista.")
-
-# 2. Sustituir la cadena
 nueva = input("Introduce la nueva cadena para sustituir: ")
 
 for i in range(len(lista)):
@@ -25,7 +15,6 @@ for i in range(len(lista)):
 
 print("Lista después de sustituir:", lista)
 
-# 3. Borrar una cadena
 borrar = input("Introduce una cadena para borrar: ")
 
 while borrar in lista:

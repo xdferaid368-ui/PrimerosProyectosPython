@@ -1,0 +1,51 @@
+numero1 = int(input("Primer Numero: "))
+numero2 = int(input("Segundo Numero: "))
+
+if numero1 < numero2:
+    print(numero1, "es menor que", numero2)
+    for i in range(numero1, numero2 + 1):
+        print(i)
+elif numero2 < numero1:
+    print(numero2, "es menor que", numero1)
+    for i in range(numero2, numero1 + 1):
+        print(i)
+else:
+    print("Son el mismo número")
+
+media = (numero1 + numero2) / 2
+print("La media es:", media)
+
+longitud = int(input("Cuantos números quieres introducir en la lista?: "))
+lista = []
+
+for i in range(longitud):
+    numero = int(input("Introduce un número: "))
+    lista.append(numero)
+print (lista)
+
+print("La media de los elementos de la lista es ", sum(lista)/len(lista))
+
+numlist= int(input("Dime un numero a buscar en la lista:"))
+if numlist in lista:
+    print("El numero ", numlist," SI esta en la lista")
+
+else:
+    print("El numero ", numlist, "NO esta en la lista")
+
+lista.sort()
+print(lista)
+
+lista2 = []
+for i in range(longitud):
+    numero = int(input("Introduce un número: "))
+    lista2.append(numero)
+print (lista2)
+ 
+lista2.sort()
+liston = lista + lista2
+liston.sort()
+print("La union de las dos listas es :", liston)
+
+
+
+
