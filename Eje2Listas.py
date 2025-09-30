@@ -25,12 +25,13 @@ print(listvalora)
 # Calcular y mostrar la media de todas las valoraciones.
 suma = sum(listvalora)
 media = suma%5
+print("La media de las valoraciones es:", media)    
 # Indicar cuántos juegos han recibido una valoración mayor o igual a 8.
 listmayor8 = []
-for valoracion in listvalora:
-    if valoracion >= 8:
-        listmayor8.append(valoracion)
-        print("Los juegos con valoracion mayor a 8 son", listmayor8)
+for i, valor in enumerate(listvalora):
+    if valor >= 8:
+        listmayor8.append(listvideojuegos[i])
+print("Los juegos con valoracion mayor o igual a 8 son:", listmayor8)
 # Mostrar el videojuego con la mejor valoración y el que tenga la peor.
 # listvalora.sort
 # for i in range(len(listvalora)):
@@ -42,3 +43,6 @@ for valoracion in listvalora:
 # if(ValueError):
 #     print("NO HAY DATOS PARA ANALIZAR")
 
+for i, valor in enumerate(listvalora):
+    if valor >= 8:
+        listmayor8.append(listvideojuegos[i])
