@@ -32,14 +32,13 @@ for valoracion in listvalora:
         listmayor8.append(valoracion)
         print("Los juegos con valoracion mayor a 8 son", listmayor8)
 # Mostrar el videojuego con la mejor valoración y el que tenga la peor.
-listvalora.sort
-for i in range(len(listvalora)):
-    #ESTO ESTA MAL!!!
-    print("El videojuego con mas valoracion es el videojuego"),listvideojuegos[i]," con una valoracion de", listvalora[4]
-    print("El videojuego con mas valoracion es el videojuego"),listvideojuegos[i]," con una valoracion de", listvalora[1]
-# Si por algún motivo no se han podido registrar valoraciones válidas, el programa deberá mostrar un mensaje indicando que no hay datos para analizar.
-    #ESTO ESTA MAL!!!
-if(ValueError):
-    print("NO HAY DATOS PARA ANALIZAR")
+# listvalora.sort
+# for i in range(len(listvalora)):
+#     #ESTO ESTA MAL!!!
+#     print("El videojuego con mas valoracion es el videojuego"),listvideojuegos[i]," con una valoracion de", listvalora[4]
+#     print("El videojuego con mas valoracion es el videojuego"),listvideojuegos[i]," con una valoracion de", listvalora[1]
+# # Si por algún motivo no se han podido registrar valoraciones válidas, el programa deberá mostrar un mensaje indicando que no hay datos para analizar.
+#     #ESTO ESTA MAL!!!
+# if(ValueError):
+#     print("NO HAY DATOS PARA ANALIZAR")
 
-    
